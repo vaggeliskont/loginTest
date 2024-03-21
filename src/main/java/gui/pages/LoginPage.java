@@ -33,7 +33,7 @@ public class LoginPage extends BasePage {
         emailInput.setValue(username);
         passwordInput.setValue(password);
         submitButton.shouldBe(enabled).click();
-
         return new HomePage();
     }
+
 }

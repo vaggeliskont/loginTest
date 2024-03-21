@@ -23,13 +23,18 @@ dependencies {
     implementation 'org.projectlombok:lombok:1.18.22'
 
     // https://mvnrepository.com/artifact/org.assertj/assertj-core
-    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.25.3'
+    implementation group: 'org.assertj', name: 'assertj-core', version: '3.25.3'
 
     // https://mvnrepository.com/artifact/org.testng/testng
-    testImplementation group: 'org.testng', name: 'testng', version: '7.9.0'
+    implementation group: 'org.testng', name: 'testng', version: '7.9.0'
 
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.12'
+
+// https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
+
 
 
 }
