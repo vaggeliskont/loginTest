@@ -1,8 +1,13 @@
 package consumable;
 
 import com.codeborne.selenide.*;
+import com.codeborne.selenide.webdriver.HttpClientTimeouts;
 import lombok.SneakyThrows;
 import org.openqa.selenium.PageLoadStrategy;
+
+import java.time.Duration;
+
+import static firstPackage.FirstLesson.driver;
 
 public class WebDriverManager {
 
