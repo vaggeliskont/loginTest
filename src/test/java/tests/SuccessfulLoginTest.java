@@ -29,7 +29,10 @@ public class SuccessfulLoginTest extends TestSetUp {
                 .clickCookiesButton()
                 .login(USERNAME, PASSWORD);
 
-        Wait().until(webDriver -> webDriver.getCurrentUrl().equals(URLH));
+        //Wait().until(webDriverRunner -> webDriverRunner.getCurrentUrl().equals(URLH));
+        WebDriverWait wait; // Adjust timeout as needed
+        wait = new WebDriverWait(WebDriverRunner.getWebDriver(),Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.urlToBe(URLH));
 
         new HomePage().verifyFaUserIsDisplayed();
     }
